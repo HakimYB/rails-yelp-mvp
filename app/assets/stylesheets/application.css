@@ -13,3 +13,31 @@
  *= require_tree .
  *= require_self
  */
+
+ .item_name{
+  font-size: 20px;
+ }
+ .btn{
+  margin-left: 10px !important;
+  margin-top: 10px !important;
+ }
+.form{
+  margin-left: 10px !important;
+}
+.margin{
+ margin-left: 20px !important;
+}
+.container{
+  border: 5px solid gray;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  background-color: rgb(238, 228, 215);
+}
+.title{
+  text-align: center;
+}
+.background{
+  background-color: rgb(237, 216, 191);
+}
+.btn-center{
+  align-items: center;
+}

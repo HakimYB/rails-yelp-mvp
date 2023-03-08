@@ -1,10 +1,18 @@
-<h1>List of restaurants</h1>
+<div class="background">
+  <div class="title">
+    <h1>List of restaurants</h1>
+  </div>
 
-<ul>
-<% @restaurants.each do |r| %>
-<li><%= r.name %> </li>
-<%= link_to "See more details", restaurant_path(r), class: "btn btn-primary"%>
-<% end %>
-</ul>
+  <div class="container">
+    <ul>
+    <% @restaurants.each do |r| %>
+    <li class="item_name"><%= r.name %> </li>
+    <%= link_to "See more details", restaurant_path(r), class: "btn btn-primary"%>
+    <% end %>
+    </ul>
+  </div>
 
-<%= link_to "Create a new resturant", new_restaurant_path(), class: "btn btn-primary"%>
+  <div class="btn-center">
+    <%= link_to "Create a new resturant", new_restaurant_path(), class: "btn btn-primary"%>
+  </div>
+</div>

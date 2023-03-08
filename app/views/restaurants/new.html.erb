@@ -1,11 +1,15 @@
-<h1>Create a new restaurant</h1>
+<div class="title">
+  <h1>Create a new restaurant</h1>
+</div>
 
-<%= simple_form_for(@restaurant) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :category %>
-  <%= f.input :address %>
-  <%= f.input :phone_number %>
-  <%= f.submit %>
-<% end %>
+<div class= "form margin">
+  <%= simple_form_for(@restaurant) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :category %>
+    <%= f.input :address %>
+    <%= f.input :phone_number %>
+    <%= f.submit %>
+  <% end %>
+</div>
 
 <%= link_to "⬅ Return to home page", restaurants_path(), class: "btn btn-primary"%>
